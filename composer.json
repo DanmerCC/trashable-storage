@@ -1,0 +1,22 @@
+{
+    "name": "danmercc/trashable-storage",
+    "description": "Intercepta y mueve los archivos eliminados a una carpeta de trash.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DanmerCC\\TrashableStorage\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DanmerCC\\TrashableStorage\\TrashStorageServiceProvider"
+            ]
+        }
+    }
+}
